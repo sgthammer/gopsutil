@@ -177,7 +177,6 @@ func InfoWithContext(ctx context.Context) ([]InfoStat, error) {
 
 	var ret []InfoStat
 	var processorName string
-	var armCPUModelEmptyFlag bool
 
 	c := InfoStat{CPU: -1, Cores: 1}
 	for _, line := range lines {
